@@ -10,5 +10,8 @@ data.setFullYear(2023, 11, 31); // RITORNA LA DATA ORA MINUTI E SECONDI IMPOSTAT
 console.log(data);
 
 let date = new Date("September 30, 2023 18:00:00"); // RITORNA L'ADD + 5 DELLA DATA IMPOSTATA
-date.setDate(date.getDate() + 5);
-console.log(date);
+console.log(date.getDay);
+console.log(date.getMonth);
+console.log(date.getFullYear);
+
+

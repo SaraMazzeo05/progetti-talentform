@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi</title>
+  </head>
+  <body>
+    /<p id ="interval"></p>
+    <p id="Intervallo"></p>
+    <script>
+      setInterval(interval, 1000);
+      function interval() {
+        let d = new Date();
+        document.getElementById("interval").innerHTML =
+          d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+      }
+      setInterval(intervalloTesto(), 5000);
+      function intervalloTesto() {
+        document.getElementById("Intervallo").innerHTML = "E che si fa?";
+      }
+      setTimeout(intervalloTestoOut(), 10000);
+      function intervalloTestoOut() {
+        document.getElementById("Intervallo").innerHTML = "Che devo fare?";
+      }
+      //Traccia: Crea una funzione che mostra in console un messaggio dopo 2
+      function mostraMsgDopoDueSec() {
+        setTimeout(() => {
+          console.log("hello world");
+        }, 2000);
+      }
+      mostraMsgDopoDueSec();
+    //Traccia: Crea una funzione che prende un nome e lo mostra dopo 1 secondo.
+      function getAndShowNome(nome) {
+        setTimeout(() => {
+          console.log(nome);
+        }, 1000);
+      }
+      getAndShowNome("Mario");
+      //Traccia: Crea una funzione che conta da 1 a 5 con setInterval.
+      function countFromOneToFive() {
+        let n = 1;
+        setInterval(() => {
+          if (n < 6) {
+            console.log(n);
+          }
+          n++;
+        }, 1000);
+      }
+      countFromOneToFive();
+      //Traccia: Crea una funzione che parte da un numero e fa un conto alla rovescia.
+      function contoAllaRovescia(partenza){
+        let numero = partenza;
+
+        const timer = setInterval(() => {
+            console.log(numero);
+
+            if(numero === 0){
+                clearInterval(timer);
+                console.log("Tempo scaduto. ");
+            }
+
+            numero--;
+        }, 1000);
+      }
+      contoAllaRovescia(10);
+      //Traccia: Crea una funzione che alterna tra “ON” e “OFF” ogni 2 secondi.
+      function alterna(){
+        let stato = false;
+
+        setInterval(() => {
+            stato = !stato;
+            console.log(stato ? "ON" : "OFF");
+        }, 2000);
+      }
+
+      alterna();
+      //Traccia: Crea una funzione che mostra “Ping” ogni secondo per 3 volte.
+      function mostra(){
+        let count = 0;
+
+        const intervallo = setInterval(() =>{
+            console.log("Ping");
+            count++;
+
+            if(count == 3){
+                clearInterval(intervallo);
+            }
+        }, 1000);
+      }
+      mostra();
+    </script>
+  </body>
+</html>

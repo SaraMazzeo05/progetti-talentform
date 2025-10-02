@@ -3,7 +3,7 @@ let str = "fabio";
 let bool = true;
 let obj = {};
 let fun = function () {};
-let nan = isNaN;
+let nan = isNaN;//verifica se il parametro inserito è un numero e restituisce un valore booleano
 console.log(typeof num);
 console.log(typeof str);
 console.log(typeof bool);

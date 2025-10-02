@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="homeclick()"> HERE</button>
+    <button onclick="handleclick(this)"> QUI</button>
+    <div id = "divColore" style="width: 80; height: 80; background-color: #b89e8a;" ondblclick="myDiv(this)">
+        <p> 
+        Nessun dorma! Nessun dorma!<br>
+        Tu pure, o Principessa,<br>
+        nella tua fredda stanza<br>
+        guardi le stelle<br>
+        che tremano d'amore e di speranza...<br>
+        </p>
+    </div>
+    <h1 id="Hello World"> Hello World </h1>
+    <a id ="link" href="https://www.amazon.it/ref=nav_logo"></a>
+    <script>
+        let js = (document.getElementById("Hello World").innerHTML =
+        "Ciao Mondo");
+        document.getElementById("Hello World").style.backgroundColor = "purple"
+        document.getElementById("link").setAttribute("href", "https://www.lottomatica.it/")
+        document.getElementById("link").innerHTML= "Lottomatica";
+        function change(btn) {
+        if (btn.value === "Open Button") btn.value = "Close Button";
+        else btn.value = "Close Button";
+        }
+        function homeclick() {
+            alert("OK")
+        }
+        function handleclick(btn) {
+            btn.innerHTML="Cambia";
+        }
+        function myDiv(element) {
+            element.style.backgroundColor ="#d7c7bb";
+        }
+
+    </script>
+</body>
+</html>

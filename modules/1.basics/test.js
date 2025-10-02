@@ -1,679 +1,556 @@
-// VARIABILI
-
-/*
-let color = 'red'
-let id = 10.05
-let log = true
-color = true
-const api = 'https://prova.com/products'
-// NON SI PUO' FARE api =''
-let brand = 'fiat' // INIZIALIZZAZIONE PER VALORE
-let modelBrand = brand // INIZIALIZZAZIONE PER RIFERIMENTO
-
-console.log(log + ' ' + color + ' ' + api);
-
-let operation = 163 % 5
-console.log('RESTO :'+' '+ operation);
-
-
-
-if (10 < 3) {
-  console.log("OK");
+//Scrivi un programma che controlla se un numero è positivo o negativo.
+/*let numero = 5;
+if (numero > 0) {
+  console.log("Il numero è positivo");
 } else {
-  console.log("ERROR");
+  console.log("Il numero è negativo");
 }
 
-
-
-if (10 == 5) {
-    console.log('OK');
-    
-    
-} else if (5 == 3) {
-    
-    console.log('OK');
-}
-
-else if (3 == 3) {
-    
-    console.log('L\'ULTIMO E QUELLO GIUSTO');
-}
-
-
-let min = 2
-let max = 8
-
-let res = min<max?'OK':'ERROR'
-console.log(res);
-
-
-
-if (10 > 3 || 5 < 2) {
-    
-    console.log('OK');
-    
+//Verifica se un numero è pari o dispari.
+if (numero % 2 == 0) {
+  console.log("Il numero è pari");
 } else {
+  console.log("Il numero è dispari");
+}*/
 
-    console.log('ERROR');
-    
+//Controlla se un utente è maggiorenne (>=18 anni).
+/*let utente = 19;
+if (utente >= 18) {
+  console.log("L'utente è maggiorenne");
+} else {
+  console.log("L'utente è minorenne");
+}*/
+
+//Controlla se un numero è multiplo di 5.
+/*let numero =  25;
+if (numero %5 == 0) {
+  console.log("Il numero è multiplo di 5");
+} else {
+  console.log("il numero non è un multiplo di 5");
+}*/
+
+//Dato un carattere, controlla se è una vocale o una consonante.
+/*let carattere = "b";
+if (carattere == "a" || carattere == "e" || carattere == "i" || carattere == "o" || carattere == "u" || carattere == "y") {
+  console.log("Il carattere è una vocale");
+} else {
+  console.log("Il carattere è una consonante");
+}*/
+
+//Controlla se un numero è compreso tra 10 e 100.
+/*let numero = 99;
+if (numero >= 10 && numero <= 100) {
+  console.log ("Il numero è compreso");
+}else {
+  console.log("Il tuo numero non è compreso");
+}*/
+
+//Dato il voto di uno studente, stampa "promosso" se >= 6, altrimenti "bocciato".
+/*let studente = 7;
+if (studente >= 6) {
+  console.log("Sei promosso");
+} else {
+  console.log("Sei bocciato");
 }
 
+//Verifica se due numeri sono uguali
+let numero = 6;
+let numero2 = 9;
+if (numero == numero2) {
+  console.log("I numeri sono uguali");
+} else {
+  console.log("I numeri non sono ugluali");
+}*/
 
-let log! = true
- console.log(log);
+//Stabilisci il maggiore tra due numeri interi.
+/*let numero = 5;
+let numero2 = 7;
+if (numero > numero2) {
+  console.log(numero + " è maggiore di " + numero2);
+} else {
+  console.log(numero + " è minore di " + numero2);
+}
 
- 
- let year = 2025
+//Verifica se una stringa è vuota.
+let a = "";
+if (a.length == 0) {
+  console.log("è vuota");
+} else {
+  console.log("non è vuota");
+}*/
 
+//Scrivi un programma che stampa i numeri da 1 a 10 usando un ciclo for.
+/*let num;
+for (num = 1; num, num <= 10; num++) {
+  console.log(num);
+}*/
 
- switch (year) {
-    case 2022:
-           console.log('ERROR YEAR');
-           
-         break;
-        
-      case 2024:
-           console.log('ERROR YEAR');
-           
-         break;
-     
-            
-      case 2026:
-           console.log('EXACT YEAR');
-           
-         break;
-    
- 
-     default:
-           console.log('NOT FOUND VALUES');
-           
+//Scrivi un programma che calcola la somma dei numeri da 1 a 100 usando un ciclo for
+/*let somma = 0;
+for (num =1; num <= 100; num++) 
+  somma += num;
+  console.log(somma);
+*/
+
+//Scrivi un programma che stampa la tabellina del 7 (da 1×7 a 10×7).
+/*let tabellina = 7;
+for (i = 1; i <= 10; i++) 
+  console.log(i*tabellina);
+*/
+//Scrivi un programma che stampa i numeri pari da 2 a 20.
+/*for (let j =2; j <=20; j +=2){
+                    console.log(j);
+                  }
+                    */
+//Scrivi un programma che stampa tutti i numeri da 1 a 50 divisibili per 3.
+/*let num;
+for (num = 1; num <= 50; num++) {
+  if (num % 3 == 0) {
+    console.log(num);
+  }
+}*/
+
+//Stampa il quadrato di ogni numero da 1 a 10 (es: 1² = 1, 2² = 4, ecc.).
+/*let num;
+for (num = 1; num <= 10; num++) console.log(num + "^2=" + num * num);
+*/
+
+//Calcola e stampa la somma dei primi n numeri dispari (es. n = 5 → 1 + 3 + 5 + 7 + 9 = 25).
+/*let n = 5;
+let somma = 0;
+let numero = 1;
+for (i = 1; i <= n; i++) {
+  somma += numero;
+  numero += 2;
+}
+console.log("Somma primi " + n + " numeri dispari " + somma);
+*/
+
+//Dato base = 2 ed esponente = 5, calcola 2 elevato a 5
+/*let base = 2;
+let esponente = 5;
+let calcolo = 1;
+for (i = 0; i < esponente; i++){
+  calcolo *=base;
+}
+console.log(calcolo);
+*/
+
+//Scrivi un programma che stampa tutti i numeri primi da 2 a 100 usando solo for.
+/*for (i = 2; i <= 100; i++) {
+  let primo = true;
+    for( n = 2; i <= i/2; n++) {
+      if(i %1 == 0) {
+        let primo= false;
         break;
- }
- 
-  
+      }
+    }
+    if (primo)
+      console.log(i+"")
+}*/
 
-for (let index = 20; index > 10; index = index - 2) {
-  if (index == 16) {
-    continue;
-  }
-  console.log(index);
+// stampa da 1 a 10
+/*let num = 1;
+while(num <= 10) {
+    console.log(num);
+    num++;
+}*/
+//Scrivi un programma che calcola la somma dei numeri da 1 a 100 usando while.
+/*let num = 1;
+let somma = 0;
+while(num7 <= 100) {
+    sum2 += num7;
+    num7 ++;
 }
+console.log(sum2);
+*/
+//Scrivi un programma che stampa tutti i numeri pari da 2 a 20 usando while.
+/*num8 = 1;
+while(num8 <= 20) {
+    if(num8 % 2 == 0) {
+        console.log(num8);
+    }
+    num8++;
+}*/
 
- 
+//Scrivi un programma che calcola il fattoriale di 5 usando while.
+/*let i5 = 1;
+while(i5 <= 10){
+    console.log(i5 + " x 4 = " + i5*4);
+    i5++;
+}*/
 
- let count = 0
-  
-while (0<10) {
-    
-    count++
-    console.log(count);
-    
+//Stampa la tabellina del 4 da 1×4 a 10×4 usando while.
+/*let num = 1;
+while (num <= 10) {
+  console.log(num+ " x 4 = "+num *4);
+  num++;
+}*/
+
+//Scrivi un programma che calcola quante cifre ha un numero intero positivo (es. numero = 3456 ha 4 cifre).
+/*let numero = 3456;
+let conta = 0;
+while (numero > 0) {
+  numero = Math.floor(numero/10);
+  conta++;
 }
-    
+console.log("Il numero: " + numero + " ha " + conta + " cifre.");
+*/
 
- 
-let tech = 'JAVASCRIPT' 
-let job = '   developer    '
-let union = tech.concat(job)
-console.log(tech.length);// LUNGHEZZA CARATTERI
-console.log(job.replace('developer', 'DEVELOPER')); // SOSTITUISCO LA STRINGA INIZIALIZZATA
-console.log(union); // UNIONE DI 2 STRINGHE
-console.log(job.trim()); // RIMUOVO GLI SPAZI SX DX DELLA MIA VARIABILE
-
-console.log(tech.toLowerCase() + ' '+ job.toUpperCase()); // TRASFORMO LE MIE VARIABILI DA MINUSCOLO IN MAIUSCOLO E VICEVERSA
-
-let codStudent = 231
-let cod = codStudent.toString() // CONVERTO UN VALORE NUMBER IN UN VALORE STRING
-console.log(cod);
-console.log(typeof(cod));  // VERIFICA CHE IL VALORE SIA UNA STRING
-
-
-let colori = ["rosso", "verde", "giallo"]; 
-for (let index = 0; index < colori.length; index++) {// ITERO IL MIO ARRAY
-  console.log(colori[index]);
+//Scrivi un programma che calcola la somma delle cifre di un numero intero positivo.
+//Scrivi un programma che inverte un numero intero positivo.
+//Esempio: 1234 → 4321
+/*let numero = 1234;
+let invertito = 0;
+while (numero > 0) {
+  let cifra = numero % 10;
+  invertito = invertito * 10 + cifra;
+  numero = parseInt(numero / 10);
 }
-console.log(colori.length);// VISUALIZZO LA LUNGHEZZA DELL'ARRAY
-console.log(colori[2]);// VISUALIZZO QUALE ELEMENTO SI TROVA NELLA POSIZIONE O INDICE 2
-colori.pop()// RIMUOVO L'ULTIMO ELEMENTO IN CODA ALL'ARRAY
-colori.push('viola') // AGGIUNGO UN NUOVO ELEMENTO IN CODA ALL'ARRAY
-colori.sort() // ORDINO DA CRESCENTE A DECRESCENTE L'ARRAY
-colori.reverse()// ORDINO DA DECRESCENTE A CRESCENTE L'ARRAY
-colori.unshift('blu') // INSERISCO ALLA POSIZIONE 0 UN NUOVO ELEMENTO
-colori.forEach(function (item, index) {   // CICLO ITEM E INDEX DELL'ARRAY
-  // ciclare array
-  console.log(item + " " + index);
-});
+console.log(invertito);*/
 
-colori.splice(2, 0, "arancione", "grigio"); // AGGIUNGO 2 ELEMENTI ALL'INDICE 2
-console.log(colori);
-
-colori.splice(2, 2); //  RIMUOVO GLI ELEMENTI AGGIUNTI ALL'INDICE 2
-
-let numbers = [1, 2, 2, 3, 3, 4, 5, 6]
- let set = new Set(numbers);
-      console.log(set);
-
-
-
-  let nomi = ['c','c','b','b','a','a','d','d']
-      let set = new Set(nomi);
-      console.log(set);
- 
-   
- 
-    let anagrafica = [
-  ["anna", 45],
-  ["paolo", 10],
-  ["luca", 25],
-      ["antonio", 55],
-      ["mirko", 15],
-      ["antonia", 25],
-      ["giuseppe", 55],
-  ["maria", 55],
-];
-
-console.log(anagrafica);
-
-   
-let corso = {   // DEFINISCO LE PROPRIETA' E I VALORI INIZIALI
-  materie: ["javascript", "java", "php"],
-  oreDurata: 200,
-  studenti: 16,
-  periodo: "maggio-giugno",
-  attestato: "si",
-};
-
-corso.webinar = "si";
-console.log(corso);
-//console.log(corso);
-
-
-
-function myCourse(nome,technology) {
-  return nome + ' ' + technology;
-}
-
-console.log(myCourse('corso', 'javascript')); 
-
-
-let array = [0,1,2,3]
-
-function stipendioMensileAnna(retribuzioneOraria, oreLavorate) {
-  
-
-  return 'TOTALE STIPENDIO ANNA' + ' '+ retribuzioneOraria*oreLavorate
-}
-
-console.log(stipendioMensileAnna(10, 160));
-
-
-    
-function CalcoloUtileTasse(redditoLordo, cefRedd) {
-    
-      return redditoLordo*cefRedd/100 + '  ' + array[2]
-}
-  
-console.log(CalcoloUtileTasse(35000, 67));
-  
-
-ECCEZIONE ARITMETICA
-
-try {
-
-  let exct = 5 / 0
-  
-} catch (error) {
-  
-}
-
-finally {
-   
-  console.log('ECCEZIONE GESTITA');
-  
-
-}
- 
-
-try {
-  let array = [1, 2, 3, 4, 5];
-  console.log(array[6]);
-} catch (error) {
-} finally {
-  console.log("ECCEZIONE GESTITA");
-
-  let array = [1, 2, 3, 4];
-  console.log(
-    "HO SBAGLIATO AD INSERIRE LA DIMENSIONE DEL MIO ARRAY:" + " " + array[3]
-  );
-}
-
-try {
-  let array = [1, 2, 3, 4, 5];
-  console.log(array[6]);
-} catch (error) {
-} finally {
-  console.log("ECCEZIONE GESTITA NEL SECONDO ARRAY");
-}
-
-
-let operator = ''
- console.log(operator);
- 
-
-
-  function getRectArea(width, height) {
-  if (isNaN(width) || isNaN(height)) {
-    throw new Error("Parameter is not a number!");
-  }
-}
-
-try {
-  getRectArea(3, "a");
-} catch (e) {
-  console.error(e);
-}
-
-   */
+//Scrivi un programma che stampa tutti i divisori di un numero intero positivo.
+//Esempio: n = 12 → 1 2 3 4 6 12
 
 /*
-        1.Dichiarazione della classe   
-        2. definire le proprietà della classe 
-        3. definire il costruttore della classe  
-        4. referenza delle proprietà    
-        5. creare l'oggetto o istanza della classe passando al costruttore 
-            i valori delle proprietà precedentemente referenziate dal costruttore 
-        6. stampa dei valori delle proprietà mediante l'istanza della classe  
-
-           
-
-
-
-class Studente {
-  nome = ""; // proprietà di classe
-  cognome = "";
-  nazione = "";
-
-  constructor(nome, cognome, nazione) {
-    // costruttore di classe
-
-    this.nome = nome; // referenzio le proprieta' della classe
-    this.cognome = cognome;
-    this.nazione = nazione;
+let num = 5;
+let count = num;
+let primo = true;
+while (count > 2) {
+  count--;
+  //   primo = true;
+  if (num % count == 0) {
+    primo = false;
+    break;
   }
+}
+// console.log("Il numero " + num + "è: " + primo ? " PRIMO" : " NON PRIMO");
+if (primo) {
+  console.log(num + " è primo.");
+} else {
+  console.log(num + " non è primo.");
+}*/
 
-  getNome() {
-          
-       return 'fabio'
+//Scrivi un programma che stampa i numeri da 1 a 10 usando do-while.
+/*let num = 1;
+do {
+  console.log(num);
+  num++;
+} while (num <= 10);
+ */
+
+//Scrivi un programma che somma i numeri da 1 a 100 usando do-while.
+/*let somma = 0;
+let num = 1;
+do {
+  somma += num;
+  num++;
+} while (num <= 100);
+console.log(somma);
+*/
+
+//Scrivi un programma che stampa la tabellina del 5 da 1×5 a 10×5.
+/*let num = 1;
+do {
+  console.log(num+ " x 5 = " + num*5)
+  num++;
+}while (num<=10)
+*/
+//Scrivi un programma che stampa i numeri pari da 2 a 20 usando
+/*let num = 2;
+do {
+  if (num % 2 == 0) {
+    console.log(num);
+  }
+  num++;
+} while (num <= 20); */
+
+//Scrivi un programma che conta quante cifre ha un numero intero positivo, ad esempio n = 12345 ha 5 cifre.
+/*let n = 12345;
+let conta = 0;
+do {
+  n = Math.floor(n / 10);
+  conta++;
+} while (n > 0);
+console.log("Il numero ha " + conta + " cifre.");*/
+
+//Scrivi un programma che somma tutte le cifre di un numero intero positivo.
+//Esempio: 456 → 4 + 5 + 6 = 15.
+/*let somma = 0;
+let cifre = 456;
+do {
+  let cifra = cifre % 10;
+  somma += cifra;
+  cifre = Math.floor(cifre / 10);
+} while (cifre > 0);
+console.log("La somma delle cifre è di: " + somma);
+*/
+
+//Usa uno switch per stampare il giorno della settimana dato un numero da 1 a 7.
+/*let giorno = 3;
+switch (giorno) {
+  case 1:
+    console.log("Lundedì");
+    break;
+   case 2:
+    console.log("Martedì");
+    break;
+   case 3:
+    console.log("Mercoledì");
+    break;
+   case 4:
+    console.log("Giovedì");
+    break;
+   case 5:
+    console.log("Venerdì");
+    break;
+   case 6:
+    console.log("Sabato");
+    break;
+   case 7:
+    console.log("Domenica");
+    break;
+}*/
+
+//Usa uno switch per stampare la stagione dato un mese (es. 1 = gennaio = inverno).
+/*let mese = 3;
+switch (mese) {
+  case 11: case 9: case 10:
+  console.log("Autunno")
+  break;
+  
+  case 12: case 1: case 2:
+  console.log("Inverno")
+  break;
+
+  case 3: case 4: case 5:
+  console.log("Primavera")
+  break;
+  
+  case 6: case 7: case 8:
+  console.log("Estate")
+  break;
+  default:
+    break;
+}*/
+
+//Dato un codice prodotto, usa uno switch per mostrare nome e prezzo
+/*let codice = "A001";
+switch (codice) {
+  case "A001":
+    console.log("Bagnoschiuma");
+    break;
+  case "A002":
+    console.log("Crema corpo");
+    break;
+  case "A003":
+    console.log("Dentifricio");
+    break;
+  default:
+    break;
+}*/
+
+//Simula una calcolatrice base con switch (+, -, *, /).
+/*let numero1 = 5;
+let numero2 = 3;
+let operazione = 1;
+let risultato = 0;
+switch (operazione) {
+  case 1:
+    console.log(numero1+numero2);
+    break;
+  case 2:
+    console.log(numero1-numero2);
+    break;
+  case 3:
+    console.log(numero1/numero2);
+    break;
+  case 4:
+    console.log(numero1*numero2);
+    break;
+  default:
+    break;
+}*/
+
+//Scrivi un programma che usa if per verificare l'età, e switch per decidere il tipo di biglietto (es. junior, adulti, senior).
+/*let eta = 35;
+let biglietto;
+if(eta <= 18) {
+    biglietto = "junior";
+} else if(eta <= 45) {
+    biglietto = "adulto";
+} else {
+    biglietto = "senior";
+}
+switch(biglietto) {
+    case "junior":
+        console.log("Biglietto junior: 5,99€");
+        break;
+    case "adulto":
+        console.log("Biglietto per adulti: 10,50€");
+        break;
+    case "senior":
+        console.log("Biglietto per senior: 7,80€");
+        break;
+    default:
+        console.log("Biglietto invalido");
+}*/
+//Usa uno switch per stampare il nome del mese e con if stampa se ha 31 o 30 giorni.
+/*let mese1 = 4;
+switch(mese1) {
+    case 4: case 6: case 9: case 11:
+        console.log("Il mese è di 30 giorni");
+        break;
+    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+        console.log("Il mese è da 31 giorni");
+        break;
+    default:
+        console.log("Siamo a Febbraio");
+}*/
+
+//Dato un voto in lettere (A, B, C, ecc.), stampa con switch il valore numerico equivalente.
+/*let voto = "C";
+switch(voto) {
+    case "A":
+        console.log("Il voto preso rientra tra 80 e 100");
+        break;
+    case "B":
+        console.log("Il voto preso rientra tra 60 e 80");
+        break;
+    case "C":
+        console.log("Rimandato, il voto è al di sotto dei 60");
+        break;
+    case "D":
+        console.log("Bocciato");
+        break;
+    default:
+        console.log("Test non ancora eseguito");
+}*/
+
+//Crea una simulazione bancomat: con if verifica il PIN, con switch scegli l’operazione.
+/*
+let saldo = 6000;
+let pin = 1234;
+let ope = 2;
+let cifra;
+let ultima_operazione = 2;
+
+if (pin == 1234) {
+  switch (ope) {
+    case 1:
+      console.log("hai scelto prelievo");
+      cifra = 50;
+      saldo -= cifra;
+      ultima_operazione = 1;
+      console.log(saldo: ${saldo});
+      if (ultima_operazione != 0) {
+        if (ultima_operazione == 1) {
+          console.log("ultima operazione: prelievo");
+        } else {
+          console.log("ultima operazione: deposito");
         }
+      }
+      break;
 
-}
+    case 2:
+      console.log("hai scelto deposito");
+      cifra = 100;
+      saldo += cifra;
+      ultima_operazione = 2;
+      console.log(saldo: ${saldo});
+      if (ultima_operazione != 0) {
+        if (ultima_operazione == 1) {
+          console.log("ultima operazione: prelievo");
+        } else {
+          console.log("ultima operazione: deposito");
+        }
+      }
+      break;
 
+    case 3:
+      console.log(saldo: ${saldo});
+      if (ultima_operazione != 0) {
+        if (ultima_operazione == 1) {
+          console.log("ultima operazione: prelievo");
+        } else {
+          console.log("ultima operazione: deposito");
+        }
+      }
 
-let studente = new Studente("antonio", "rossi", "italia"); // istanzio la classe e passo gli argomenti al costruttore
-console.log(studente);
-
-
-
-
-class IndirizziScolastici extends Studente {
-  // ereditarietà
-
-  istituto = "";
-
-  constructor(istituto, nome, cognome, nazione) {
-    super(nome, cognome, nazione); // passo al super le proprieta' della classe padre
-
-    this.istituto = istituto;
+    default:
+      break;
   }
-  getIstituto() {
-    // metodo di classe
-
-    return this.istituto;
-  }
-
-
-
-  getNome() {   // METODO POLIMORFICO
-    
-    return 'marco'
-
-  }
-}
-let nomeIstituto = new IndirizziScolastici("giuseppe verdi",'marco','rossi','italia');
-console.log(nomeIstituto);
-let istituto = nomeIstituto.getIstituto(); ////  creo la variabile oggetto per chiamare il metodo
-console.log(istituto);
-let student = nomeIstituto.getNome()
- console.log(student);
- 
-istituto.nazione // chiamo la proprieta'
-console.log(istituto);
-
- 
-
-class Dipendenti {
-  oreLavorate = 0;
-  retribuzioneOraria = 0;
-  stipendio = 0;
-
-  constructor(retribuzioneOraria, oreLavorate, stipendio) {
-    this.retribuzioneOraria = retribuzioneOraria;
-    this.oreLavorate = oreLavorate;
-    this.stipendio = stipendio;
-  }
-
-  getStipendio() {
-    return this.retribuzioneOraria * this.oreLavorate;
-  }
-
-  getRetribuzioneOraria() {
-    return this.stipendio / this.oreLavorate;
-  }
-
-  getOreLavorate() {
-    return this.stipendio / this.retribuzioneOraria;
-  }
-}
-
-let dipendenti = new Dipendenti(10, 160, 1600);
-
-let stipendio = dipendenti.getStipendio();
-console.log(stipendio);
-
-let retribuzioneOraria = dipendenti.getRetribuzioneOraria();
-console.log(retribuzioneOraria);
-
-let oreLavorate = dipendenti.getOreLavorate()
-console.log(oreLavorate);
-
-class Azienda extends Dipendenti {
-  nome = "";
-
-  constructor(nome, retribuzioneOraria, oreLavorate, stipendio) {
-    super(retribuzioneOraria, oreLavorate, stipendio);
-
-    this.nome = nome;
-  }
-
-  getNomeAzienda() {
-    return this.nome;
-  }
-
-  getStipendio() {
-    return this.retribuzioneOraria * this.oreLavorate;
-  }
-
-  getOreLavorate() {
-    return this.stipendio / this.retribuzioneOraria;
-  }
-
-  getRetribuzioneOraria() {
-    return this.stipendio / this.oreLavorate;
-  }
-}
-
-let azienda = new Azienda("PC SRL", 10, 160, 1600);
-
-let aziendaName = azienda.getNomeAzienda();
-console.log(aziendaName);
-
-let aziendaStipendio = azienda.getStipendio();
-console.log(aziendaStipendio);
-
-let aziendaRetribuzioneOraria = azienda.getRetribuzioneOraria();
-console.log(aziendaRetribuzioneOraria);
-
-let aziendaOreLavorate = azienda.getOreLavorate();
-console.log(aziendaOreLavorate);
-
-
-
-   ESERCIZIO BANK ACCOUNT CONTO CORRENTE FATHER AND SON  DETERMINARE IL SALDO ATTUALE DI FATHER E DI SON APPLICANDO IL CANONE ANNUO
-        DEL 15% LE OPERAZIONE DA ESEGUIRE SARANNO LE SEGUENTI : SALDO INIZIALE = 0,  FIRST DEPOSIT 500€ FIRST DRAW 100€ SECOND DEPOSIT 200€ SECOND DRAW 100€
-        TOTAL ACCOUNT ?
-
-  
-
-class FatherAccount {
-  balance = 0;     // DEFINISCO LE PROPRIETA'
-  firstDeposit = 500;
-  firstDraw = 100;
-  secondDeposit = 200;
-  secondDraw = 50;
-
-  constructor(balance, firstDeposit, firstDraw, secondDeposit, secondDraw) {   // PASSAGGIO DELLE PROPRIETA' AL COSTRUTTORE
-    this.balance = balance;           // REFERENZA E INIZIALIZZA LE PROPRIETA'
-    this.firstDeposit = firstDeposit;
-    this.firstDraw = firstDraw;
-    this.secondDeposit = secondDeposit;
-    this.secondDraw = secondDraw;
-  }
-
-  getFirstDeposit() {          // CALCOLO DEL METODO GETFIRSTDEPOSIT
-    return this.balance + this.firstDeposit;
-  }
-
-  getFirstDraw() {  // CALCOLO DEL METODO GETFIRSTDRAW
-    return this.getFirstDeposit() - this.firstDraw;
-  }
-
-  getSecondDeposit() {    // CALCOLO DEL METODO GETSECONDDEPOSIT
-    return this.getFirstDraw() + this.secondDeposit;
-  }
-
-  getTotalAccount() {   // METODO CHE CALCOLA IL TOTALACCOUNT
-    return this.getSecondDeposit() - this.secondDraw;
-  }
-}
-
-let fatherAccount = new FatherAccount(0, 500, 100, 200, 50); // INIZIALIZZO GLI ARGOMENTI DEL COSTRUTTORE
-
-let father = fatherAccount.getTotalAccount();  // INVOCO IL METODO GETTOTTALACCOUNT PER VISUALIZZARE IL SALDO FINALE
-console.log("SALDO TOTALE FATHER ACCOUNT" + '   ' + father + '€');
-
-
-class SonAccount extends FatherAccount {
-     
-   canoneAnnuo = 0
-
-  constructor(balance, firstDeposit, firstDraw, secondDeposit, secondDraw,canoneAnnuo) {
-      
-    super(balance,firstDeposit, firstDraw, secondDeposit, secondDraw) // DEFINISCO LE PROPRIETA' NEL SUPER
-    this.canoneAnnuo = canoneAnnuo
-
-
-  }
-  
-       // OVVERRRIDE DEI METODI POLIMORFICI
-          
-  
-          getFirstDeposit() {          // CALCOLO DEL METODO GETFIRSTDEPOSIT
-    return this.balance + this.firstDeposit;
-  }
-
-  getFirstDraw() {  // CALCOLO DEL METODO GETFIRSTDRAW
-    return this.getFirstDeposit() - this.firstDraw;
-  }
-
-  getSecondDeposit() {    // CALCOLO DEL METODO GETSECONDDEPOSIT
-    return this.getFirstDraw() + this.secondDeposit;
-
-
-  }   
-
-  getSecondDraw() {
-      
-    return this.getSecondDeposit() - this.secondDraw
-
-  }
-
-   getCanoneAnnuo() {    // METODO CHE CALCOLA IN EURO IL CANONE ANNUO DA PAGARE
-        
-    return (this.getSecondDraw()*this.canoneAnnuo)/100
-
-    }
-  
-  
-  getTotalAccount() {   // METODO CHE CALCOLA IL TOTALACCOUNT
-    return this.getSecondDraw() - this.getCanoneAnnuo()
-  }
-
-   }
-
-
-
-
-let sonAccount = new SonAccount(0, 500, 100, 200, 50, 15)
-let son = sonAccount.getTotalAccount()
-   console.log('SALDO TOTALE SON ACCOUNT ' +son+ '€');
-   
-   
-
-
-class FatherAccount {
-
-  balance = 0
-  firstDeposit = 0
-  firstDraw = 0
-  secondDeposit = 0
-  seconDraw = 0
-
-    
-  getFirstDeposit(balance = 0, firstDeposit = 500) {
-    
-
-    return balance + firstDeposit
-  }
-
-  getFirstDraw(firstDraw = 100) {
-
-    return this.getFirstDeposit() - firstDraw
-  }
-
-
-  getSecondDeposit(secondDeposit = 200) {
-
-    return this.getFirstDraw() + secondDeposit
-  }
-
-
-  getTotalAccount(secondDraw = 50) {
-    
-  return this.getSecondDeposit() - secondDraw
-
-
-  }
-
-
-}
-
-let fatherAccount = new FatherAccount()
-let father = fatherAccount.getTotalAccount()
-  console.log(father);
-  
-  
-
-
-class Freelancer {
-  redditoAnnuoLordo = 0;
-  coeffRedd = 0;
-  tassaIrpef = 0;
-  tassaInps = 0;
-
-  constructor(redditoAnnuoLordo, coeffRedd, tassaIrpef, tassaInps) {
-    this.redditoAnnuoLordo = redditoAnnuoLordo;
-    this.coeffRedd = coeffRedd;
-    this.tassaIrpef = tassaIrpef;
-    this.tassaInps = tassaInps;
-  }
-
-  getUtileTasse() {
-    return (this.redditoAnnuoLordo * this.coeffRedd) / 100;
-  }
-
-  getTassaIrpef() {
-    return (this.getUtileTasse() * this.tassaIrpef) / 100;
-  }
-
-  getTassaInps() {
-    return (this.getUtileTasse() * this.tassaInps) / 100;
-  }
-
-  getStipendioMensile() {
-    return (
-      (this.redditoAnnuoLordo - (this.getTassaIrpef() + this.getTassaInps())) /
-      12
-    );
-  }
-}
-
-let freelancer = new Freelancer(40000, 67, 15, 26);
-
-let stipendioMensile = freelancer.getStipendioMensile();
-console.log("STIPENDIO MENSILE:FREELANCER" + stipendioMensile + "€");
-
-class Artigiano extends Freelancer {
-
-  constructor(redditoAnnuoLordo,coeffRedd,tassaIrpef,tassaInps) {
-  super(redditoAnnuoLordo,coeffRedd,tassaIrpef,tassaInps)
-
-  }
-
-
-
-  getUtileTasse() {
-    return (this.redditoAnnuoLordo * this.coeffRedd) / 100;
-  }
-
-  getTassaIrpef() {
-    return (this.getUtileTasse() * this.tassaIrpef) / 100;
-  }
-
-
-  getStipendioMensile() {
-    return ( (this.redditoAnnuoLordo - (this.getTassaIrpef() + this.tassaInps)) /
-      12
-    );
-  }
-}
-
-let artigiano = new Artigiano(85000, 67, 15, 2500);
-let stipArtigiano = artigiano.getStipendioMensile()
-console.log("REDDITO MENSILE: ARTIGIANO " + stipArtigiano + "€");
-
-class Commerciante extends Artigiano {
-
-  constructor(redditoAnnuoLordo, coeffRedd, tassaIrpef, tassaInps) {
-    
-    super(redditoAnnuoLordo,coeffRedd,tassaIrpef,tassaInps)
-  }
-  getUtileTasse() {
-    return (this.redditoAnnuoLordo * this.coeffRedd) / 100;
-  }
-
-  getTassaIrpef() {
-    return (this.getUtileTasse() * this.tassaIrpef) / 100;
-  }
-
-  getStipendioMensile() {
-    return (
-      (this.redditoAnnuoLordo - (this.getTassaIrpef() + this.tassaInps)) /
-      12
-    );
-  }
-}
-
-let commerciante = new Commerciante(125000, 40, 15, 2500);
-let stipCommerciante = commerciante.getStipendioMensile();
-console.log("REDDITO MENSILE: COMMERCIANTE " + stipCommerciante + "€");
-
-
-  */
-
-
-
-   
-
-
+} else {
+  console.log("pin non valido!");
+}*/
+//Dato un segno zodiacale ("Ariete", "Toro", ecc.), usa switch per stampare il mese corrispondente.
+/*
+let s = "Toro";
+
+switch (s) {
+  case "Acquario":
+    console.log("gennaio");
+    console.log("febbraio");
+    break;
+
+  case "Pesci":
+    console.log("febbraio");
+    console.log("marzo");
+    break;
+
+  case "Ariete":
+    console.log("marzo");
+    console.log("aprile");
+    break;
+
+  case "Toro":
+    console.log("aprile");
+    console.log("maggio");
+    break;
+
+  case "Gemelli":
+    console.log("maggio");
+    console.log("giugno");
+    break;
+
+  case "Cancro":
+    console.log("giugno");
+    console.log("luglio");
+    break;
+
+  case "Leone":
+    console.log("luglio");
+    console.log("agosto");
+    break;
+
+  case "Vergine":
+    console.log("agosto");
+    console.log("settembre");
+    break;
+
+  case "Bilancia":
+    console.log("settembre");
+    console.log("ottobre");
+    break;
+
+  case "Scorpione":
+    console.log("ottobre");
+    console.log("novembre");
+    break;
+
+  case "Saggitario":
+    console.log("novembre");
+    console.log("dicembre");
+    break;
+
+  case "Capricorno":
+    console.log("dicembre");
+    console.log("gennaio");
+    break;
+
+  default:
+    console.log("non trovato");
+    break;
+}*/
 
 
