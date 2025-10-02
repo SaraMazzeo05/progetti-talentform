@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nome": "Lazio",
+        "province": ["Frosisone", "Viterbo", "Roma"]
+    },
+    {
+        "id": 2,
+        "nome": "Puglia",
+        "province": ["Foggia", "Bari", "Lecce"]
+    },
+     {
+        "id": 2,
+        "nome": "Sicilia",
+        "province": ["Catania", "Enna", "Trapani"]
+    }
+]

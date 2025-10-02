@@ -24,8 +24,6 @@ if ( dimmi == null) {
       } else {
         alert("VAI DAL MEDICO");
       }
-      let exit = false;
-
       while (!exit) {
         let nome = prompt("CIAO COME TI CHIAMI?");
 
