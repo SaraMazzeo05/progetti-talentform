@@ -3,13 +3,13 @@ import SonComponent from "./introduction_components/SonComponent";
 
 const IntroductionComponent = () => {
   return (
-    <div>
+    <React.Fragment>
       <h2>Ho ricevuto delle informazioni dal SonComponent </h2>
 
       <div>
         <SonComponent />
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

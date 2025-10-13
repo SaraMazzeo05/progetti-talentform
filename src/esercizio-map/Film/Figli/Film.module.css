@@ -1,0 +1,11 @@
+div{
+    border-color: rgb(7, 7, 11);
+    border-width: 4px;
+    border-style: solid;
+}
+p{
+    font-style: inherit;
+    text-align:center;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

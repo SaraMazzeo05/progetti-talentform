@@ -1,0 +1,9 @@
+div {
+  border-width: 5px;
+  border-color: #481832;
+  border-style: inset;
+}
+li {
+  font-family: cursive;
+  margin-block: 3px;
+}
